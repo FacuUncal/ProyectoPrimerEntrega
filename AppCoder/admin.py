@@ -3,4 +3,9 @@ from .models import *
 
 # Register your models here.
 
+admin.site.register(Usuarios)
+
+admin.site.register(Temas)
+
+admin.site.register(Staff)
 

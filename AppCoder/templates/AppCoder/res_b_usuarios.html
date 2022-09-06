@@ -1,0 +1,22 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">Busqueda de usuarios</h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+<h1>Resultados de tu busqueda</h1>
+{% if usuario %}
+
+    {% for usuario in usuarios %}
+        <p>{{usuario.nickname}}</p>
+    {% endfor %}
+
+{% else %}
+<p>No se encontraron usuarios</p>
+
+{% endif %}
+
+{% endblock%}
