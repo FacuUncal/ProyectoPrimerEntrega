@@ -77,6 +77,6 @@ def buscando_usuarios(request):
     if request.GET['nickname']:
         nickname = request.GET['nickname']
         usuarios=Usuarios.objects.filter(nickname=nickname)
-        return render(request, 'AppCoder/res_b_usuarios.html', {'Usuarios': usuarios})
+        return render(request, 'AppCoder/res_b_usuarios.html', {'usuarios': usuarios})
     else:
         return render(request, 'AppCoder/busco_usuarios.html', {'mensaje': 'Ingrese un usuario'})

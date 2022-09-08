@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block contenido_que_cambia %}
-
+<h1>¿Querés ser parte de nuestro staff? Pasanos tus datos!</h1>
 <form action="{% url 'form_staff' %}" method="POST"> {% csrf_token %}
     <table>
         {{ formulario.as_table}}
